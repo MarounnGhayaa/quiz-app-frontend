@@ -11,7 +11,7 @@ const quizzes = [
     },
     {
       id: 2,
-      title: "JavaScript Basics",
+      title: "JavaScript Basic Rules",
       image: "../images/quiz2.jpg",
     },
     {
