@@ -50,7 +50,7 @@ document.querySelectorAll(".start-quiz").forEach((button, index) => {
       ],
       2: [
         { question: "Which keyword declares a variable in JavaScript?", options: ["var", "int", "define"], answer: "var" },
-        { question: "How do you write a comment in JavaScript?", options: ["<!-- -->", "//", "**"], answer: "//" },
+        { question: "How do you write a comment in JavaScript?", options: ["<>", "//", "**"], answer: "//" },
         { question: "Which method removes the last element from an array in JavaScript?", options: ["pop()", "push()", "slice()"], answer: "pop()" }
       ],
       3: [
