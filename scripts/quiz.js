@@ -16,4 +16,35 @@ for (let i = 0; i < quizData.questions.length; i++) {
     }
 
     quizContainer.innerHTML += `</div></div>`;
-  }
+}
+
+const showScore = document.getElementById('showScore');
+const quizCont = document.querySelector('.quizCont');
+const quizScore = document.getElementById('quiz-score');
+
+showScore.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    let score = 0;
+
+    for (let i = 0; i < quizData.questions.length; i++) {
+        const selectedOption = document.querySelector(`input[name="question-${i}"]:checked`);
+    
+        if (selectedOption) {
+            const userAnswer = selectedOption.value;
+            const correctAnswer = quizData.questions[i].answer;
+
+            if (userAnswer === correctAnswer) {
+                score++;
+            }
+        }
+    }
+
+    quizScore.innerHTML = `<div class="score-box">
+                           <h2>Quiz Completed!</h2>
+                           <p>Your score is <span>${score}</span> out of <span>${quizData.questions.length}</span>.</p>
+                           </div>`;
+
+quizCont.classList.add('hidden');
+quizScore.classList.remove('hidden');
+});
