@@ -41,7 +41,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     if (logger) {
       alert(`Welcome, ${logger.name}!`);
         if (logger.role === "admin") {
-            window.location.href = ".pages/dashboard.html";
+            window.location.href = "./pages/dashboard.html";
         } else {
             window.location.href = "./pages/home.html";            
         }
