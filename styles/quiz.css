@@ -29,7 +29,8 @@
     margin-bottom: 20px;
   }
   
-  .option-btn {
+  .option-section {
+    text-align: center;
     display: block;
     width: 100%;
     margin: 8px 0;
@@ -42,7 +43,7 @@
     cursor: pointer;
   }
   
-  .option-btn:hover {
+  .option-section:hover {
     background-color: rgb(6, 166, 6);
   }
 

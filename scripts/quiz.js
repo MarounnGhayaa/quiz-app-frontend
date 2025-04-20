@@ -8,7 +8,11 @@ for (let i = 0; i < quizData.questions.length; i++) {
                                 <div class="options">`;
   
     for (let j = 0; j < question.options.length; j++) {
-      quizContainer.innerHTML += `<button class="option-btn">${question.options[j]}</button>`;
+        quizContainer.innerHTML += `<label class="option-section">
+                                    <input type="radio" name="question-${i}" value="${question.options[j]}">
+                                    ${question.options[j]}
+                                    </label>
+                                    <br>`;
     }
 
     quizContainer.innerHTML += `</div></div>`;
