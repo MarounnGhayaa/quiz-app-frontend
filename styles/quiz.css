@@ -45,3 +45,19 @@
   .option-btn:hover {
     background-color: rgb(6, 166, 6);
   }
+
+  footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer a {
+    text-align: center;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    padding: 20px;
+  }
