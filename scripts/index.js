@@ -17,7 +17,6 @@ showLoginLink.addEventListener('click', (e) => {
 
 const users = [ 
     { role: "admin", name: "Maroun", email: "admin@quiz.com", password: "admin123", score: 0},
-    { role: "user", name: "Nabiha", email: "nabiha@quiz.com", password: "nabiha123", score: 0}
   ];
 
 localStorage.setItem("users", JSON.stringify(users));
