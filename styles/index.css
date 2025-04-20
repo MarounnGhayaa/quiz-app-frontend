@@ -3,16 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
-
+  
   body {
     background-color: lightgray;
     font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
-    color: black;
   }
-
+  
   header {
     text-align: center;
-    padding: 30px;
+    padding: 30px 0;
     background-color: green;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
   }
@@ -34,11 +33,10 @@
   .login-field h3,
   .register-field h3 {
     text-align: center;
-    text-decoration: underline;
     margin-bottom: 20px;
     color: black;
   }
-
+  
   .login-form,
   .register-form {
     background-color: white;
@@ -56,10 +54,8 @@
     color: black;
   }
   
-  .login-form input[type="email"],
-  .login-form input[type="password"],
-  .register-form input[type="email"],
-  .register-form input[type="password"] {
+  .login-form input,
+  .register-form input {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -70,7 +66,7 @@
   .login-form button,
   .register-form button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: green;
     color: white;
     border-radius: 6px;
@@ -81,4 +77,23 @@
   .login-form button:hover,
   .register-form button:hover {
     background-color: rgb(6, 166, 6);
+  }
+
+  .form-toggle {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .form-toggle a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .form-toggle a:hover {
+    text-decoration: underline;
+  }
+
+  .hidden {
+    display: none;
   }

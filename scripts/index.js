@@ -1,3 +1,20 @@
+const showRegisterLink = document.getElementById('showRegister');
+const showLoginLink = document.getElementById('showLogin');
+const loginField = document.querySelector('.login-field');
+const registerForm = document.getElementById('registerForm');
+
+showRegisterLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    loginField.classList.add('hidden');
+    registerForm.classList.remove('hidden');
+});
+
+showLoginLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    registerForm.classList.add('hidden');
+    loginField.classList.remove('hidden');
+});
+
 const users = [ 
     { role: "admin", name: "Maroun", email: "admin@quiz.com", password: "admin123"},
     { role: "user", name: "Nabiha", email: "nabiha@quiz.com", password: "nabiha123"}
