@@ -45,15 +45,18 @@ document.querySelectorAll(".start-quiz").forEach((button, index) => {
     const questions = {
       1: [
         { question: "What is the capital of France?", options: ["Paris", "London", "Rome"], answer: "Paris" },
-        { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter"], answer: "Mars" }
+        { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter"], answer: "Mars" },
+        { question: "What is the main organ of taste?", options: ["Tongue", "Nose", "Neck"], answer: "Tongue" }
       ],
       2: [
         { question: "Which keyword declares a variable in JavaScript?", options: ["var", "int", "define"], answer: "var" },
-        { question: "How do you write a comment in JavaScript?", options: ["<!-- -->", "//", "**"], answer: "//" }
+        { question: "How do you write a comment in JavaScript?", options: ["<!-- -->", "//", "**"], answer: "//" },
+        { question: "Which method removes the last element from an array in JavaScript?", options: ["pop()", "push()", "slice()"], answer: "pop()" }
       ],
       3: [
         { question: "Which year did World War I begin?", options: ["1914", "1939", "1920"], answer: "1914" },
-        { question: "Who was the leader of Germany during WWII?", options: ["Hitler", "Stalin", "Churchill"], answer: "Hitler" }
+        { question: "Who was the leader of Germany during WWII?", options: ["Hitler", "Stalin", "Churchill"], answer: "Hitler" },
+        { question: "Which of the following nations was not invited to Versailles?", options: ["France", "Great Britain", "Russia"], answer: "Russia" }
       ]
     };
 
