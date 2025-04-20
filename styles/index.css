@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: lightgray;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    color: black;
+  }
+
+  header {
+    text-align: center;
+    padding: 30px;
+    background-color: green;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  header h1 {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .main-screen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+
+  .login-field h3,
+  .register-field h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .login-form,
+  .register-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .login-form label,
+  .register-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: block;
+    color: black;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid gray;
+  }
+
+  .login-form button,
+  .register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .login-form button:hover,
+  .register-form button:hover {
+    background-color: rgb(6, 166, 6);
+  }
