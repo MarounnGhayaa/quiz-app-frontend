@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: lightgray;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+  }
+  
+  header h1{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .scoresList {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border: 4px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .user {
+    margin: 20px;;
+    border: 4px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  }
