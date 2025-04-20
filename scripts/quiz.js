@@ -1,0 +1,1 @@
+const quizData = JSON.parse(localStorage.getItem("selectedQuiz"));
