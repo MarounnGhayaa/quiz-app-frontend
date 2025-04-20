@@ -37,4 +37,32 @@ for (let i = 0; i < quizzes.length; i++) {
                                 <button class="start-quiz">Start Quiz</button>
                               </div>`;
 }
+
+document.querySelectorAll(".start-quiz").forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const selectedQuiz = quizzes[index];
+
+    const questions = {
+      1: [
+        { question: "What is the capital of France?", options: ["Paris", "London", "Rome"], answer: "Paris" },
+        { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter"], answer: "Mars" }
+      ],
+      2: [
+        { question: "Which keyword declares a variable in JavaScript?", options: ["var", "int", "define"], answer: "var" },
+        { question: "How do you write a comment in JavaScript?", options: ["<!-- -->", "//", "**"], answer: "//" }
+      ],
+      3: [
+        { question: "Which year did World War I begin?", options: ["1914", "1939", "1920"], answer: "1914" },
+        { question: "Who was the leader of Germany during WWII?", options: ["Hitler", "Stalin", "Churchill"], answer: "Hitler" }
+      ]
+    };
+
+    localStorage.setItem("selectedQuiz", JSON.stringify({
+      title: selectedQuiz.title,
+      questions: questions[selectedQuiz.id]
+    }));
+    
+    window.location.href = "./quiz.html";
+  });
+});
   
