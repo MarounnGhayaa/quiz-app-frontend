@@ -32,3 +32,26 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
       alert("Invalid email or password. Please try again.");
     }
   });
+
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+  
+    const regMail = document.getElementById("log-email").value;
+    const regPass = document.getElementById("log-pass").value;
+
+    const storedUsers = JSON.parse(localStorage.getItem("users"));
+
+    const user = {
+        role: "user",
+        name: regMail.split('@')[0],
+        email: regMail,
+        password: regPass
+    };
+
+    storedUsers.push(user);
+    
+    localStorage.setItem("users", JSON.stringify(storedUsers));
+    alert("Registration successful! You can now log in.");
+   
+    window.location.href = "./pages/home.html";
+});
