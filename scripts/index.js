@@ -53,8 +53,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
 document.getElementById("registerForm").addEventListener("submit", function(e) {
     e.preventDefault();
   
-    const regMail = document.getElementById("log-email").value;
-    const regPass = document.getElementById("log-pass").value;
+    const regMail = document.getElementById("reg-email").value;
+    const regPass = document.getElementById("reg-pass").value;
 
     const storedUsers = JSON.parse(localStorage.getItem("users"));
 
