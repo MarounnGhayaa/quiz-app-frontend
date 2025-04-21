@@ -1,5 +1,5 @@
 const userList = document.getElementById('scores-list');
-const storedUsers = JSON.parse(localStorage.getItem("users"));
+const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
 for (let i = 0; i < storedUsers.length; i++) {
     const user = storedUsers[i];

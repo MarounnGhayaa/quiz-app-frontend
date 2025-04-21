@@ -28,7 +28,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     const logMail = document.getElementById("log-email").value;
     const logPass = document.getElementById("log-pass").value;
   
-    const storedUsers = JSON.parse(localStorage.getItem("users"));
+    const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
   
     let logger = null;
     for (const user of storedUsers) {
@@ -57,7 +57,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
     const regMail = document.getElementById("reg-email").value;
     const regPass = document.getElementById("reg-pass").value;
 
-    const storedUsers = JSON.parse(localStorage.getItem("users"));
+    const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
     let emailExists = false;
     for (const user of storedUsers) {
