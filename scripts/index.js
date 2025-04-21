@@ -67,7 +67,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
     };
 
     storedUsers.push(user);
-    
+    localStorage.setItem("currentUser", JSON.stringify(user));
     localStorage.setItem("users", JSON.stringify(storedUsers));
     alert(`Congrats ${user.name}, registration successful! You can now log in.`);
    
