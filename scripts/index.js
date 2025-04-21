@@ -61,7 +61,8 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
         role: "user",
         name: regMail.split('@')[0],
         email: regMail,
-        password: regPass
+        password: regPass,
+        score: 0
     };
 
     storedUsers.push(user);
