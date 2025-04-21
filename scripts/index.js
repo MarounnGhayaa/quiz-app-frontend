@@ -67,7 +67,7 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
     storedUsers.push(user);
     
     localStorage.setItem("users", JSON.stringify(storedUsers));
-    alert("Registration successful! You can now log in.");
+    alert(`Congrats ${user.name}, registration successful! You can now log in.`);
    
     window.location.href = "./pages/home.html";
 });

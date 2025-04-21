@@ -48,3 +48,4 @@ showScore.addEventListener('click', (e) => {
 quizCont.classList.add('hidden');
 quizScore.classList.remove('hidden');
 });
+
