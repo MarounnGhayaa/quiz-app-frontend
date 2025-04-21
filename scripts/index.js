@@ -17,7 +17,7 @@ showLoginLink.addEventListener('click', (e) => {
 
 if (!localStorage.getItem("users")) {
     const users = [ 
-      { role: "admin", name: "Maroun", email: "admin@quiz.com", password: "admin123", score: 0}
+        { role: "admin", name: "Maroun", email: "admin@quiz.com", password: "admin123", score: 0 }
     ];
     localStorage.setItem("users", JSON.stringify(users));
 }
@@ -49,7 +49,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     } else {
       alert("Invalid email or password. Please try again.");
     }
-  });
+});
 
 document.getElementById("registerForm").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -59,18 +59,30 @@ document.getElementById("registerForm").addEventListener("submit", function(e) {
 
     const storedUsers = JSON.parse(localStorage.getItem("users"));
 
-    const user = {
-        role: "user",
-        name: regMail.split('@')[0],
-        email: regMail,
-        password: regPass,
-        score: 0
-    };
+    let emailExists = false;
+    for (const user of storedUsers) {
+        if (user.email === regMail) {
+            emailExists = true;
+            break;
+        }
+    }
 
-    storedUsers.push(user);
-    localStorage.setItem("currentUser", JSON.stringify(user));
-    localStorage.setItem("users", JSON.stringify(storedUsers));
-    alert(`Congrats ${user.name}, registration successful! You can now log in.`);
-   
-    window.location.href = "./pages/home.html";
+    if (emailExists) {
+        alert("This email is already registered.");
+    } else {
+        const user = {
+            role: "user",
+            name: regMail.split('@')[0],
+            email: regMail,
+            password: regPass,
+            score: 0
+        };
+
+        storedUsers.push(user);
+        localStorage.setItem("currentUser", JSON.stringify(user));
+        localStorage.setItem("users", JSON.stringify(storedUsers));
+        alert(`Congrats ${user.name}, registration successful! You can now log in.`);
+        
+        window.location.href = "./pages/home.html";
+    }
 });
