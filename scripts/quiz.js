@@ -19,6 +19,9 @@ for (let i = 0; i < quizData.questions.length; i++) {
 
     quizContainer.innerHTML += `</div></div>`;
 }
+quizContainer.innerHTML += `<div class = "submitQuiz">
+                            <a href="#" id="showScore">Submit</a>
+                            </div>`;
 
 const showScore = document.getElementById('showScore');
 const quizCont = document.querySelector('.quizCont');

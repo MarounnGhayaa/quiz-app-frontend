@@ -47,13 +47,13 @@
     background-color: rgb(6, 166, 6);
   }
 
-  footer {
+  .submitQuiz {
     padding: 20px;
     display: flex;
     justify-content: center;
   }
   
-  footer a {
+  .submitQuiz a {
     text-align: center;
     text-decoration: none;
     background-color: green;
