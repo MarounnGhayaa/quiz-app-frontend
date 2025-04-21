@@ -40,6 +40,22 @@ showScore.addEventListener('click', (e) => {
         }
     }
 
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    
+    if (currentUser) {
+
+        const users = JSON.parse(localStorage.getItem("users"));
+
+        for (const user of users) {
+
+            if (user.email === currentUser.email) {
+                user.score = score;
+                break;
+            }
+        }
+        localStorage.setItem("users", JSON.stringify(users));
+    }
+
     quizScore.innerHTML = `<div class="score-box">
                            <h2>Quiz Completed!</h2>
                            <p>Your score is <span>${score}</span> out of <span>${quizData.questions.length}</span>.</p>
