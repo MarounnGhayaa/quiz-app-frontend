@@ -1,6 +1,8 @@
 const quizData = JSON.parse(localStorage.getItem("selectedQuiz"));
 const quizContainer = document.getElementById("quiz-container");
 
+document.getElementById("quiz-title").textContent = `: ${quizData.title}`;
+
 for (let i = 0; i < quizData.questions.length; i++) {
     const question = quizData.questions[i];
     quizContainer.innerHTML += `<div class="question">
