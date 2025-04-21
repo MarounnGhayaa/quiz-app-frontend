@@ -1,6 +1,6 @@
 const showRegisterLink = document.getElementById('showRegister');
 const showLoginLink = document.getElementById('showLogin');
-const loginField = document.querySelector('.login-field');
+const loginField = document.getElementById('loginForm');
 const registerForm = document.getElementById('registerForm');
 
 showRegisterLink.addEventListener('click', (e) => {

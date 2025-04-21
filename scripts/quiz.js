@@ -24,7 +24,7 @@ quizContainer.innerHTML += `<div class = "submitQuiz">
                             </div>`;
 
 const showScore = document.getElementById('showScore');
-const quizCont = document.querySelector('.quizCont');
+const quizCont = document.getElementById('quiz-container');
 const quizScore = document.getElementById('quiz-score');
 
 showScore.addEventListener('click', (e) => {
