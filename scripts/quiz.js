@@ -55,6 +55,7 @@ showScore.addEventListener('click', (e) => {
 
             if (user.email === currentUser.email) {
                 user.score = score;
+                user.quizTitle = quizData.title;
                 break;
             }
         }

@@ -14,9 +14,10 @@ else {
         }
         else {
         userList.innerHTML += `<div class="user">
-                               <h3>${user.name}</h3>
-                               <p>Email: ${user.email}</p>
-                               <p>Score: ${user.score}</p>
+                               <h3>${user.name}</h3><br>
+                               <p>Email: ${user.email}</p><br>
+                               <p>Quiz: ${user.quizTitle}</p><br>
+                               <p>Score: [${user.score}]</p><br>
                                </div>`;
         }
     }
