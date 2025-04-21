@@ -39,3 +39,30 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   }
+
+  .footer-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.4);
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .logout-btn {
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .logout-btn:hover {
+    background-color: white;
+    color: green;
+    border: 2px solid black;
+  }
