@@ -38,7 +38,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
   
     if (logger) {
-      alert(`Welcome, ${logger.name}!`);
+        localStorage.setItem("currentUser", JSON.stringify(logger));
+        alert(`Welcome, ${logger.name}!`);
         if (logger.role === "admin") {
             window.location.href = "./pages/dashboard.html";
         } else {
