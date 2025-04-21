@@ -1,84 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+.quizCont {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
   
-  body {
-    background-color: lightgray;
-    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
-  }
+.question {
+  margin-bottom: 20px;
+}
   
-  header h1{
-    background-color: green;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
+.option-section {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: large;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
   
-  .quizCont {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
-  
-  .question {
-    margin-bottom: 20px;
-  }
-  
-  .option-section {
-    text-align: center;
-    display: block;
-    width: 100%;
-    margin: 8px 0;
-    padding: 10px;
-    font-size: large;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .option-section:hover {
-    background-color: rgb(6, 166, 6);
-  }
+.option-section:hover {
+  background-color: rgb(6, 166, 6);
+}
 
-  .submitQuiz {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-  }
+.submitQuiz {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
   
-  .submitQuiz a {
-    text-align: center;
-    text-decoration: none;
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-    border-style: none;
-    padding: 20px;
-  }
+.submitQuiz a {
+  text-align: center;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 20px;
+}
 
-  .hidden {
-    display: none;
-  }
+.hidden {
+  display: none;
+}
 
-  .score-box {
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 12px;
-    padding: 30px;
-    max-width: 400px;
-    margin: 50px auto;
-    text-align: center;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  }
+.score-box {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
   
-  .score-box h2 {
-    color: green;
-    margin-bottom: 20px;
-  }
+.score-box h2 {
+  color: green;
+  margin-bottom: 20px;
+}

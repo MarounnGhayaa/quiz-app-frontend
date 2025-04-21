@@ -10,7 +10,7 @@
     background-image: url(../images/quizBackground.avif);
   }
   
-  header h1 {
+  .page-title {
     background-color: rgba(0, 128, 0, 0.4);
     color: white;
     text-align: center;

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
     <link rel="stylesheet" href="../styles/home.css"/>
 </head>
 <body>
     <header>
-        <h1>
-            We're excited to have you here!
+        <h1 class = "page-title">Welcome! We're excited to have you here!</h1>
+        <h2>
             Get ready to test your knowledge and have some fun.
             Choose a quiz that catches your eye, and let's see how well you do.
             Good luck you've got this!
-        </h1>
+        </h2>
     </header>
     <main>
     <div id="q-list" class="quizzes-list"></div>
     </main>
+    <div class="footer-section">
+        <button id="logoutBtn" class="logout-btn">Log Out</button>
+    </div>
     <script src="../scripts/home.js"></script>
 </body>
 </html>

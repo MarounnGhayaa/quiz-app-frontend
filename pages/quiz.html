@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Page</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
     <link rel="stylesheet" href="../styles/quiz.css"/>
 </head>
 <body>
     <header>
-        <h1>Quiz <span id = "quiz-title"></span></h1>
+        <h1 class = "page-title">Quiz <span id = "quiz-title"></span></h1>
     </header>
     <main>
         <div class = "quizCont" id = "quiz-container"></div>
         <div class = "quizScore hidden" id = "quiz-score">S</div>
     </main>
+    <div class="footer-section">
+        <button id="logoutBtn" class="logout-btn">Log Out</button>
+    </div>
     <script src = "../scripts/quiz.js"></script>
 </body>
 </html>
