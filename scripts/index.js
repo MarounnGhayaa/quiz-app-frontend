@@ -15,11 +15,12 @@ showLoginLink.addEventListener('click', (e) => {
     loginField.classList.remove('hidden');
 });
 
-const users = [ 
-    { role: "admin", name: "Maroun", email: "admin@quiz.com", password: "admin123", score: 0},
-  ];
-
-localStorage.setItem("users", JSON.stringify(users));
+if (!localStorage.getItem("users")) {
+    const users = [ 
+      { role: "admin", name: "Maroun", email: "admin@quiz.com", password: "admin123", score: 0}
+    ];
+    localStorage.setItem("users", JSON.stringify(users));
+}
 
 document.getElementById("loginForm").addEventListener("submit", function(e) {
     e.preventDefault();
