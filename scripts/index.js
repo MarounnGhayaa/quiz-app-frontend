@@ -47,7 +47,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
             window.location.href = "./pages/home.html";            
         }
     } else {
-      alert("Invalid email or password. Please try again.");
+        alert("Invalid/Inexistent email or password. Please try again.");
     }
 });
 
