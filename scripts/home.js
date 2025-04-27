@@ -37,9 +37,11 @@ for (let i = 0; i < quizzes.length; i++) {
                               </div>`;
 }
 
-document.querySelectorAll(".start-quiz").forEach((button, index) => {
-  button.addEventListener("click", () => {
-    const selectedQuiz = quizzes[index];
+const startQuizButtons = document.querySelectorAll(".start-quiz");
+
+for (let i = 0; i < startQuizButtons.length; i++) {
+  startQuizButtons[i].addEventListener("click", function () {
+    const selectedQuiz = quizzes[i];
 
     const questions = {
       1: [
@@ -66,5 +68,4 @@ document.querySelectorAll(".start-quiz").forEach((button, index) => {
     
     window.location.href = "./quiz.html";
   });
-});
-  
+};
