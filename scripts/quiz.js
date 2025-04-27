@@ -4,15 +4,15 @@ const quizContainer = document.getElementById("quiz-container");
 document.getElementById("quiz-title").textContent = `: ${quizData.title}`;
 
 for (let i = 0; i < quizData.questions.length; i++) {
-    const question = quizData.questions[i];
+    const currentQuestion = quizData.questions[i];
     quizContainer.innerHTML += `<div class="question">
-                                <h3>${i + 1}. ${question.question}</h3>
+                                <h3>${i + 1}. ${currentQuestion.question}</h3>
                                 <div class="options">`;
   
-    for (let j = 0; j < question.options.length; j++) {
+    for (let j = 0; j < currentQuestion.options.length; j++) {
         quizContainer.innerHTML += `<label class="option-section">
-                                    <input type="radio" name="question-${i}" value="${question.options[j]}">
-                                    ${question.options[j]}
+                                    <input type="radio" name="question-${i}" value="${currentQuestion.options[j]}">
+                                    ${currentQuestion.options[j]}
                                     </label>
                                     <br>`;
     }
